@@ -84,9 +84,9 @@ function Hero() {
       <div className="relative z-10 text-center px-6 max-w-3xl mx-auto">
         <p className="text-sm md:text-base tracking-widest uppercase text-white/90 mb-4 font-medium">Vilanova i la Geltrú</p>
         <h1 className="text-4xl md:text-6xl lg:text-7xl text-white leading-tight mb-6 text-balance" style={{ fontFamily: "var(--font-heading)", fontWeight: 500 }}>
-          El mejor café de especialidad en Vilanova
+          Cafetería de especialidad y brunch en Vilanova i la Geltrú
         </h1>
-        <p className="text-lg md:text-xl text-white/90 mb-8 font-light tracking-wide">Brunch · Specialty Coffee · Terraza</p>
+        <p className="text-lg md:text-xl text-white/90 mb-8 font-light tracking-wide">Café de especialidad · Brunch Casero · Terraza en Vilanova</p>
         <a href="#carta" className="inline-flex items-center justify-center rounded-full bg-white px-8 py-3.5 text-sm font-semibold text-earth-dark transition-all hover:bg-cream-dark hover:scale-105">
           Ver carta
         </a>
@@ -108,10 +108,10 @@ function About() {
           <div className="order-2 md:order-1">
             <p className="text-sm tracking-widest uppercase text-muted-foreground mb-3 font-medium">Sobre nosotros</p>
             <h2 className="text-3xl md:text-4xl mb-6 text-balance" style={{ fontFamily: "var(--font-heading)", fontWeight: 500 }}>
-              Café con alma, en el corazón de Vilanova
+              Cafetería de especialidad y brunch en Vilanova i la Geltrú
             </h2>
             <p className="text-muted-foreground leading-relaxed text-lg mb-6">
-              En Restart trabajamos con granos Nomad, los mejores tostadores de especialidad. Cada taza está preparada con atención al detalle. Ven a desayunar, hacer brunch o simplemente a tomarte un momento.
+              En Restart Coffee servimos café de especialidad tostado por Nomad y brunch casero en Vilanova i la Geltrú. Cuidamos cada detalle para ofrecer una experiencia tranquila, con productos frescos, opciones para desayunar o hacer brunch y un espacio pensado para disfrutar.
             </p>
             <div className="flex flex-wrap gap-4">
               <FeatureBadge icon={<Dog className="w-4 h-4" />} label="Dog-friendly" />
@@ -141,17 +141,17 @@ function FeatureBadge({ icon, label }: { icon: React.ReactNode; label: string })
 
 function Menu() {
   const categories = [
-    { title: "Cafés", icon: <Coffee className="w-6 h-6" />, items: ["Espresso", "Caramel Latte", "Matcha Latte", "Cortado", "Flat White"] },
-    { title: "Brunch", icon: <UtensilsCrossed className="w-6 h-6" />, items: ["Tostadas", "Huevos Benedict", "Sin gluten disponible", "Sandwich Restart", "Aguacate"] },
-    { title: "Repostería", icon: <Cake className="w-6 h-6" />, items: ["Cookies", "Bizcochos", "Tartas caseras"] },
+    { title: "Café de especialidad", icon: <Coffee className="w-6 h-6" />, items: ["Espresso", "Caramel Latte", "Matcha Latte", "Cortado", "Flat White"] },
+    { title: "Brunch artesano", icon: <UtensilsCrossed className="w-6 h-6" />, items: ["Tostadas gourmet", "Huevos Benedict", "Opciones sin glúten", "Sandwich Restart", "Aguacate toast"] },
+    { title: "Repostería casera", icon: <Cake className="w-6 h-6" />, items: ["Cookies artesanas", "Bizcochos caseros", "Tartas del día"] },
   ];
 
   return (
     <section id="carta" className="section-padding bg-cream-dark/30">
       <div className="container-narrow">
         <div className="text-center mb-12">
-          <p className="text-sm tracking-widest uppercase text-muted-foreground mb-3 font-medium">Nuestra carta</p>
-          <h2 className="text-3xl md:text-4xl text-balance" style={{ fontFamily: "var(--font-heading)", fontWeight: 500 }}>Lo que hacemos bien</h2>
+          <p className="text-sm tracking-widest uppercase text-muted-foreground mb-3 font-medium">Qué hacemos bien</p>
+          <h2 className="text-3xl md:text-4xl text-balance" style={{ fontFamily: "var(--font-heading)", fontWeight: 500 }}>Café de especialidad, brunch y repostería en Vilanova i la Geltrú</h2>
         </div>
         <div className="grid md:grid-cols-3 gap-6 md:gap-8">
           {categories.map((category) => (
